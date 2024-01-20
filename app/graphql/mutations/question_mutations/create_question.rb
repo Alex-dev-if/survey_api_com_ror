@@ -6,7 +6,7 @@ class CreateQuestion < BaseMutation
       argument :survey_id, ID, required: true
       argument :question_type, String, required: true
       argument :required, Boolean, required: true
-      argument :options, [String], required: false
+      argument :options, [String], required: false, default_value: nil
             
       type Types::QuestionType
 

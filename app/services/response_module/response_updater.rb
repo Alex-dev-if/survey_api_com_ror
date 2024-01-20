@@ -3,6 +3,8 @@ module ResponseModule
         def initialize(id, content)
             @id = id
             @content = content
+            @params = {content: @content}
+
         end
     
         def call
@@ -10,10 +12,12 @@ module ResponseModule
         end
         
         private 
-        
+
         def update_response
+            @params.reject! {|key, value| value.nil?}
+
             response = Response.find(@id)
-            response.update!(content: @content)
+            response.update!(@params)
             response
         end
     end

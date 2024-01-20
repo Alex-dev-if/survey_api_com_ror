@@ -4,6 +4,7 @@ class SurveyUpdater < ApplicationService
     def initialize(id, name)
         @name = name
         @id = id
+        @params = {name: @name}
     end
 
     def call
@@ -13,8 +14,10 @@ class SurveyUpdater < ApplicationService
     private 
     
     def update_survey
+        @params.reject! {|key, value| value.nil?}
+
         survey = Survey.find(@id)
-        survey.update!(name: @name)
+        survey.update!(@params) 
         survey
     end
 

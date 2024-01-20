@@ -2,11 +2,11 @@ module Mutations
   module QuestionMutations
     class UpdateQuestion < BaseMutation
 
-      argument :text, String, required: false
+      argument :text, String, required: false, default_value: nil
       argument :id, ID, required: true
-      argument :question_type, String, required: false
-      argument :required, Boolean, required: false
-      argument :options, [String], required: false
+      argument :question_type, String, required: false, default_value: nil
+      argument :required, Boolean, required: false, default_value: nil
+      argument :options, [String], required: false, default_value: nil
               
       type Types::QuestionType
 

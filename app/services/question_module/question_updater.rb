@@ -6,6 +6,8 @@ module QuestionModule
             @question_type = question_type
             @required = required
             @options = options
+            @params = {text: @text, question_type: @question_type, required: @required, options: @options}
+
         end
         
         def call
@@ -15,13 +17,10 @@ module QuestionModule
         private 
 
         def update_question
+            @params.reject! {|key, value| value.nil?}
+
             question = Question.find(@id)
-            question.update!(
-            text: @text,
-            question_type: @question_type, 
-            required: @required, 
-            options: @options, 
-            )
+            question.update!(@params)
             question
         end
     end
