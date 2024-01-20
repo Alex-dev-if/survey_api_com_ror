@@ -1,24 +1,20 @@
-# README
+# Descrição
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Um projeto de API para criação de pesquisas, bem como questões, respostas e usuários para o aplicativo.
 
-Things you may want to cover:
+# Requerimentos:
 
-* Ruby version
+* Ruby on Rails 7.0.7.2
+* Ruby 3.2.2
+* Postgresql 15
 
-* System dependencies
+# Para executar o projeto
 
-* Configuration
+* Execute o comando git clone https://github.com/Alex-dev-if/survey_api_com_ror.git
+* No seu editor de código, entre na pasta "survey_api_com_ror" que foi criada (no vscode basta entra na pasta, no cmd, e digitar code .)
+* Abra a pasta "config" e o arquivo "database.yml"
+* Nos campos "username" e "password" mude para seus respectivos nome de usuário e senha do postgreSQL.
+* Agora, no cmd, na pasta "survey_api_com_ror" digite o comando "rails db:create"
+* Digite o comando "rails db:migrate"
+* O projeto já está pronto para executar, para fazer isso digite "rails s".
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
