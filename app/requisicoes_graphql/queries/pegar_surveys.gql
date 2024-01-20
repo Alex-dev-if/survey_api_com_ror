@@ -1,0 +1,9 @@
+query Surveys {
+    surveys {
+        createdAt
+        id
+        name
+        updatedAt
+        userId
+    }
+}

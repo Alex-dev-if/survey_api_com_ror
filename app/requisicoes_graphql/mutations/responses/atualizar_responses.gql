@@ -1,0 +1,9 @@
+mutation UpdateResponse {
+    updateResponse(input: { id: "", content: "" }) {
+        content
+        createdAt
+        id
+        questionId
+        updatedAt
+    }
+}

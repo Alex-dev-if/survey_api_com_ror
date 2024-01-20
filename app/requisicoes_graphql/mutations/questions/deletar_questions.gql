@@ -1,0 +1,12 @@
+mutation DeleteQuestion {
+    deleteQuestion(input: { id: "" }) {
+        createdAt
+        id
+        options
+        questionType
+        required
+        surveyId
+        text
+        updatedAt
+    }
+}

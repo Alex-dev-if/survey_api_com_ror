@@ -1,0 +1,12 @@
+query Questions {
+    questions {
+        createdAt
+        id
+        options
+        questionType
+        required
+        surveyId
+        text
+        updatedAt
+    }
+}

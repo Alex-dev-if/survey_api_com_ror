@@ -1,0 +1,9 @@
+mutation DeleteSurvey {
+    deleteSurvey(input: { id: "" }) {
+        createdAt
+        id
+        name
+        updatedAt
+        userId
+    }
+}

@@ -1,0 +1,9 @@
+mutation CreateSurvey {
+    createSurvey(input: { userId: "", name: "" }) {
+        createdAt
+        id
+        name
+        updatedAt
+        userId
+    }
+}

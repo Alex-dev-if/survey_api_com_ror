@@ -1,0 +1,9 @@
+mutation CreateResponse {
+    createResponse(input: { content: "", questionId: "" }) {
+        content
+        createdAt
+        id
+        questionId
+        updatedAt
+    }
+}

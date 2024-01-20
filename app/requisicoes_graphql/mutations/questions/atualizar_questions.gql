@@ -1,0 +1,20 @@
+mutation UpdateQuestion {
+    updateQuestion(
+        input: {
+            text: ""
+            id: ""
+            questionType: "text"
+            options: ""
+            required: true
+        }
+    ) {
+        createdAt
+        id
+        options
+        questionType
+        required
+        surveyId
+        text
+        updatedAt
+    }
+}

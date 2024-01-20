@@ -1,0 +1,61 @@
+mutation CreateQuestion {
+    createQuestion(
+        input: {
+            text: ""
+            surveyId: ""
+            questionType: "radio"
+            required: true
+            options: []
+        }
+    ) {
+        createdAt
+        id
+        options
+        questionType
+        required
+        surveyId
+        text
+        updatedAt
+    }
+}
+OU 
+mutation CreateQuestion {
+    createQuestion(
+        input: {
+            text: ""
+            surveyId: ""
+            questionType: "text"
+            required: true
+        }
+    ) {
+        createdAt
+        id
+        options
+        questionType
+        required
+        surveyId
+        text
+        updatedAt
+    }
+}
+OU
+mutation CreateQuestion {
+    createQuestion(
+        input: {
+            text: ""
+            surveyId: ""
+            questionType: "checkbox"
+            required: true
+            options: []
+        }
+    ) {
+        createdAt
+        id
+        options
+        questionType
+        required
+        surveyId
+        text
+        updatedAt
+    }
+}

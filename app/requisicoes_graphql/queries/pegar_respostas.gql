@@ -1,0 +1,9 @@
+query Responses {
+    responses(surveyId: ) {
+        content
+        createdAt
+        id
+        questionId
+        updatedAt
+    }
+}
