@@ -1,0 +1,10 @@
+mutation SigninUser {
+    signinUser(input: { password: "", username: "" }) {
+        token
+        user {
+            id
+            role
+            username
+        }
+    }
+}

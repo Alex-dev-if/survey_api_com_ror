@@ -1,0 +1,11 @@
+mutation CreateUser {
+    createUser(input: { username: "", password: "", role: "" }) {
+        clientMutationId
+        token
+        user {
+            id
+            role
+            username
+        }
+    }
+}

@@ -14,14 +14,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_19_061907) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "options", force: :cascade do |t|
-    t.text "content"
-    t.bigint "question_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["question_id"], name: "index_options_on_question_id"
-  end
-
   create_table "questions", force: :cascade do |t|
     t.string "text"
     t.bigint "survey_id", null: false
@@ -57,7 +49,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_19_061907) do
     t.string "role"
   end
 
-  add_foreign_key "options", "questions"
   add_foreign_key "questions", "surveys", on_delete: :cascade
   add_foreign_key "responses", "questions", on_delete: :cascade
   add_foreign_key "surveys", "users"

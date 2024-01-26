@@ -74,3 +74,9 @@ end
 
 gem "graphql", "~> 2.2"
 gem "graphiql-rails", group: :development
+
+
+gem "rspec-rails", "~> 6.1"
+gem 'factory_bot_rails'
+
+gem "httparty", "~> 0.21.0"

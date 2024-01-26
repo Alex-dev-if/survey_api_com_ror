@@ -1,9 +1,10 @@
-mutation CreateResponse {
-    createResponse(input: { content: "", questionId: "" }) {
-        content
+mutation UpdateSurvey {
+    updateSurvey(input: { name: "", id: "" }) {
         createdAt
         id
-        questionId
+        name
         updatedAt
+        userId
     }
 }
+
