@@ -30,7 +30,7 @@ git clonehttps://github.com/Alex-dev-if/survey_api_com_ror.git
   rails s
   ```
 > [!NOTE]
-> * Há uma pasta com todas as requisições graphql possíveis para se testar a API. Ela se chama "requisicoes_graphql" e está dentro da pasta "app".
+> * Há uma pasta com todas as requisições graphql possíveis para testar a API. Ela se chama "requisicoes_graphql" e está dentro da pasta "app".
 > * Testes RSpec disponíveis.
 
 > [!IMPORTANT]
