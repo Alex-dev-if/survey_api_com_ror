@@ -17,7 +17,7 @@ git clonehttps://github.com/Alex-dev-if/survey_api_com_ror.git
 * Abra a pasta "config" e o arquivo "database.yml"
 * Nos campos "username" e "password" mude para seus respectivos nome de usuário e senha do postgreSQL.
 * Mude o nome databases para os de sua preferência. Por padrão está survey5.
-* Agora, no cmd, na pasta "survey_api_com_ror" digite o comando :+1:
+* Agora, no cmd, na pasta "survey_api_com_ror" digite o comando 
   ```
   rails db:create
   ```
