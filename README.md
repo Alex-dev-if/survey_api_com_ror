@@ -29,11 +29,12 @@ git clonehttps://github.com/Alex-dev-if/survey_api_com_ror.git
   ```
   rails s
   ```
-![image](https://github.com/Alex-dev-if/survey_api_com_ror/assets/91799263/25161eb2-99d8-4fef-896c-a84ba4e565e5)
-
 > [!NOTE]
 > * Há uma pasta com todas as requisições graphql possíveis para se testar a API. Ela se chama "requisicoes_graphql" e está dentro da pasta "app".
 > * Testes RSpec disponíveis.
 
 > [!IMPORTANT]
 > Para testar as funcionalidades é necessário ter um usuário logado, passar o bearer token no header da requisição e estar com a role correta para aquela funcionalidade.
+
+# Diagramma de classe UML
+![image](https://github.com/Alex-dev-if/survey_api_com_ror/assets/91799263/25161eb2-99d8-4fef-896c-a84ba4e565e5)
