@@ -20,3 +20,4 @@ Um projeto de API para criação de pesquisas, bem como questões, respostas e u
 
 # Notas: 
 * Há uma pasta com todas as requisições graphql possíveis para se testar a API. Ela se chama "requisicoes_graphql" e está dentro da pasta "app".
+* Testes RSpec disponíveis
