@@ -34,5 +34,6 @@ git clonehttps://github.com/Alex-dev-if/survey_api_com_ror.git
 > [!NOTE]
 > Há uma pasta com todas as requisições graphql possíveis para se testar a API. Ela se chama "requisicoes_graphql" e está dentro da pasta "app".
 > Testes RSpec disponíveis
+
 > [!IMPORTANT]
 > Para testar as funcionalidades é necessário ter um usuário logado, passar o bearer token no header da requisição e estar com a role correta para aquela funcionalidade.
