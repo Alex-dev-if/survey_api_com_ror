@@ -5,5 +5,6 @@ mutation DeleteSurvey {
         name
         updatedAt
         userId
+        open
     }
 }

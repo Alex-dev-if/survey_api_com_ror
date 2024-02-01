@@ -80,3 +80,7 @@ gem "rspec-rails", "~> 6.1"
 gem 'factory_bot_rails'
 
 gem "httparty", "~> 0.21.0"
+
+gem 'cancancan'
+
+gem 'dotenv-rails', require: 'dotenv/load'

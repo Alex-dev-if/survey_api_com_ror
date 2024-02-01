@@ -1,10 +1,11 @@
 mutation UpdateSurvey {
-    updateSurvey(input: { name: "", id: "" }) {
+    updateSurvey(input: { name: "", id: "", open: true }) {
         createdAt
         id
         name
         updatedAt
         userId
+        open
     }
 }
 

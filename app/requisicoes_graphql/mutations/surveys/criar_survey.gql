@@ -1,9 +1,10 @@
 mutation CreateSurvey {
-    createSurvey(input: { userId: "", name: "" }) {
+    createSurvey(input: { userId: "", name: "", open: true }) {
         createdAt
         id
         name
         updatedAt
         userId
+        open
     }
 }

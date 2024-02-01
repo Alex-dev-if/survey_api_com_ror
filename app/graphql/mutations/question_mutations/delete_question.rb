@@ -1,15 +1,12 @@
 module Mutations
-module QuestionMutations
-
+  module QuestionMutations
     class DeleteQuestion < BaseMutation
       argument :id, ID, required: true
               
       type Types::QuestionType
 
       def resolve(id:)
-        unless context && context[:current_user] && context[:current_user][0]["role"] == "adm"
-          raise GraphQL::ExecutionError, "Permissão negada"
-        end
+        authorize! :delete, Question     
         QuestionModule::QuestionDestroyer.call(id)
 
       end

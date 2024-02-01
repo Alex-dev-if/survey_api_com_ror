@@ -7,9 +7,7 @@ module Mutations
       type Types::SurveyType
 
       def resolve(id: )
-        unless context && context[:current_user] && context[:current_user][0]["role"] == "adm"
-          raise GraphQL::ExecutionError, "Permissão negada"
-        end
+        authorize! :delete, Survey     
         SurveyModule::SurveyDestroyer.call(id)
 
       end

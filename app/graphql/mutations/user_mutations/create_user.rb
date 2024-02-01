@@ -17,10 +17,8 @@ module Mutations
         user = UserModule::UserCreator.call(username, password, role)
 
         if user.save  
-          token = ApplicationController.new.encode_token(role, user.id)
+          token = JsonWebToken::Jwt.new.encode_token(role, user.id)
           {user: user, token: token}
-        else
-          {error: 'usuário ou senha inválidos'}
         end
       end
 
