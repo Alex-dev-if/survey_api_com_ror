@@ -8,7 +8,6 @@ class GraphqlController < ApplicationController
     context = {
       current_user: decode_token
     }
-    puts "context = #{context}"
     result = Survey5Schema.execute(query, variables: variables, context: context, operation_name: operation_name)
     render json: result
   rescue StandardError => e
