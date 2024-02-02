@@ -13,7 +13,7 @@ Um projeto de API para criação de pesquisas, bem como questões, respostas e u
 ```
 git clone https://github.com/Alex-dev-if/survey_api_com_ror.git
 ```
-* No seu editor de código, entre na pasta "survey_api_com_ror" que foi criada (no vscode basta entrar na pasta, no cmd, e digitar code .)
+* No seu editor de código, entre na pasta "survey_api_com_ror" que foi criada (no vscode basta entrar na pasta pelo terminal e digitar code .)
 * Abra a pasta "config" e o arquivo "database.yml"
 * Nos campos "username" e "password" mude para seus respectivos nome de usuário e senha do postgreSQL.
 * Mude o nome databases para os de sua preferência. Por padrão está survey5.
