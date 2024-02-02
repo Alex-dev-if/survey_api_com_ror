@@ -35,6 +35,7 @@ git clone https://github.com/Alex-dev-if/survey_api_com_ror.git
 
 > [!IMPORTANT]
 > Para testar as funcionalidades é necessário ter um usuário logado, passar o bearer token no header da requisição e estar com a role correta para aquela funcionalidade.
+> Não é possível usar as funcionalidades de CreateUser e LoginUser passando com o usuário logado(de modo que inclua o bearer token).
 
 # Diagramma de classe UML
 ![image](https://github.com/Alex-dev-if/survey_api_com_ror/assets/91799263/25161eb2-99d8-4fef-896c-a84ba4e565e5)
