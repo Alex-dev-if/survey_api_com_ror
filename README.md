@@ -38,5 +38,6 @@ git clone https://github.com/Alex-dev-if/survey_api_com_ror.git
 > Não é possível usar as funcionalidades de CreateUser e LoginUser com o usuário logado(de modo que inclua o bearer token).
 
 # Diagramma de classe UML
-![image](https://github.com/Alex-dev-if/survey_api_com_ror/assets/91799263/b5768d06-5083-45f1-9888-def0a7db8dce)
+![image](https://github.com/Alex-dev-if/survey_api_com_ror/assets/91799263/4cb46156-5229-4104-86c1-47c38d92763d)
+
 
